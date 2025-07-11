@@ -1,4 +1,5 @@
 .cart-item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
@@ -31,6 +32,14 @@
             object-position: center;
         }
     }
+    &__link {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
     &__info {
         flex: 1 1 auto;
         min-width: 0;
@@ -53,10 +62,12 @@
         }
     }
     &__btns {
+    position: relative;
         display: flex;
         align-items: center;
         gap: toRem(10);
         margin-top: toRem(10);
+        z-index: 100;
     }
     &__favorite {
         position: static;
@@ -71,6 +82,7 @@
             display: flex;
             align-items: center;
             gap: toRem(15);
+            z-index: 100;
             span {
                 font-weight: 600;
             }

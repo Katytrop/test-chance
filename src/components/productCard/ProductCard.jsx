@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { addToCart } from '../../features/cartSlice';
+import { addToCart } from '@/features/cartSlice';
 import ProductLabel from '@/components/productLabel/ProductLabel';
 import ProductPrice from '@/components/productPrice/ProductPrice';
 import FavoriteButton from '@/components/favoriteButton/FavoriteButton';

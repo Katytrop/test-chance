@@ -2,6 +2,7 @@ import ProductLabel from '@/components/productLabel/ProductLabel';
 import { TrashIcon } from '@/assets/icons';
 import ProductPrice from '@/components/productPrice/ProductPrice';
 import FavoriteButton from '@/components/favoriteButton/FavoriteButton';
+import { Link } from 'react-router-dom';
 import './CartItem.scss';
 
 export default function CartItem({ product, onRemove, onIncrement, onDecrement, showQuantityControls = false }) {
@@ -9,6 +10,7 @@ export default function CartItem({ product, onRemove, onIncrement, onDecrement, 
 
   return (
     <div className="cart-item">
+      <Link className="cart-item__link" to={`/product/${product.id}`}></Link>
       <div className="cart-item__body">
         <div className="cart-item__left">
           <div className="cart-item__image">

@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-end;
     gap: toRem(10);
+    margin-bottom: toRem(20);
     &__price {
         &--sale {
             color: red;
