@@ -8,7 +8,7 @@ import './styles/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <BrowserRouter basename="/test-chance">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </Provider>
