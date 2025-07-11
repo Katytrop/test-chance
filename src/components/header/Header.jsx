@@ -17,7 +17,7 @@ export default function Header() {
                    <img src={logo} alt="Логотип" />
                 </div>
                 <nav className="header__menu menu">
-                    <Link className="menu__link" to="/">Каталог</Link>
+                    <Link className="menu__link" to="/catalog">Каталог</Link>
                     <Link className="menu__link" to="/">Оплата</Link>
                     <Link className="menu__link" to="/">Доставка</Link>
                     <Link className="menu__link" to="/">Контакты</Link>
