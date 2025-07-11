@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,600,700,800&display=swap");
+@import 'null';
+@import '../components/ui/ui.scss';
+
+html, body {
+    font-size: $font-size + px;
+}
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+	color: $mainColorText;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page {
+	flex: 1 1 auto;
+	padding-top: 80px;
+}
+

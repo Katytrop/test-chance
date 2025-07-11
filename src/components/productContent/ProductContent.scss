@@ -1,0 +1,41 @@
+.product-page {
+    padding: toRem(50) 0;
+    &__body {
+        display: flex;
+
+        gap: toRem(30);
+    }
+    &__image {
+        flex: 0 0 toRem(350);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__info {
+        flex: 1 1 auto;
+    }
+    h1 {
+        font-weight: 700;
+        margin-bottom: toRem(20);
+        @include adaptiv-value('font-size', 24, 16, 1); 
+    }
+    &__quantity {
+        margin: toRem(20) 0;
+    }
+    &__labels {
+        position: static;
+        margin-bottom: toRem(20);
+        .product-label {
+            display: inline-flex;
+            &:not(:last-child) {
+                margin-right: toRem(10);
+            }
+        }
+    }
+}

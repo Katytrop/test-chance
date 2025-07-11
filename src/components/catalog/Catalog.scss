@@ -1,0 +1,9 @@
+.products {
+    padding: toRem(50) 0;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: toRem(50) toRem(20);
+    }
+}
+

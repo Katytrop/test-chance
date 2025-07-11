@@ -1,0 +1,99 @@
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+    &__top {
+        position: relative;
+        height: toRem(220);
+    }
+    &__link {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 100%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__labels {
+        position: absolute;
+        bottom: toRem(10);
+        left: toRem(10);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: toRem(4);
+    }
+    
+    &__favorite {
+        position: absolute;
+        top: toRem(10);
+        right: toRem(10);
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        z-index: 10;
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: $mainColorText;
+        }
+        &.favorite-active {
+            svg {
+                fill: red;
+            }
+            
+        }
+    }
+    &__btn {
+        position: relative;
+        width: 100%;
+        z-index: 100;
+        border-radius: 12px;
+        font-size: 16px;
+        &--basket {
+            background-color: $darkColor;
+            color: #fff;
+        }
+        &--inCart {
+            background-color: $blueColor;
+            color: #fff;
+        }
+        &--not {
+            cursor: default;
+        }
+    }
+    &__bottom {
+        flex: 1 1 auto;
+    }
+    
+    &__name {
+        height: 33px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-bottom: toRem(20);
+        font-weight: 600;
+    }
+    &__quantity {
+        margin-bottom: toRem(20);
+    }
+}

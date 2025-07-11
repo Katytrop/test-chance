@@ -1,0 +1,100 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
+    padding: toRem(20);
+    &:not(:last-child) {
+        margin-bottom: toRem(20);
+    }
+    &__body {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: toRem(20);
+    }
+    &__left {
+        flex: 0 1 60%;
+        max-width: 60%;
+        display: flex;
+        gap: toRem(20);
+    }
+    &__image {
+        flex: 0 0 toRem(150);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__info {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    &__name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 700;
+        margin-bottom: toRem(20);
+    }
+    &__labels {
+        position: static;
+        margin-bottom: toRem(20);
+        .product-label {
+            display: inline-flex;
+            &:not(:last-child) {
+                margin-right: toRem(10);
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: toRem(10);
+        margin-top: toRem(10);
+    }
+    &__favorite {
+        position: static;
+    }
+    .cart-actions {
+        flex: 0 1 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: toRem(20);
+        &__quantity {
+            display: flex;
+            align-items: center;
+            gap: toRem(15);
+            span {
+                font-weight: 600;
+            }
+        }
+        &__plus, &__minus {
+            background-color: #f1f1f5;
+            border-radius: 8px;
+            width: 40px;
+            height: 40px;
+            transition: background-color .3s;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        &__remove {
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            svg {
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+    }
+    
+}
+

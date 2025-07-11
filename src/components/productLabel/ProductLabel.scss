@@ -1,0 +1,18 @@
+.product-label {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    line-height: 1;
+    font-size: 12px;
+    &--new {
+        background-color: $blueColor;
+    }
+    &--discount {
+        background-color: red;
+    }
+    &--first_weapon {
+        background-color: green;
+    }
+}

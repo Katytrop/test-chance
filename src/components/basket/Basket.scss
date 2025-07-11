@@ -1,0 +1,45 @@
+.basket {
+    padding: toRem(50) 0;
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__items {
+        margin-bottom: toRem(30);
+    }
+    &__total {
+        min-width: 500px;
+        min-height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-self: end;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+        border-radius: 12px;
+        padding: toRem(20);
+    }
+    .total-products {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        h3 {
+            font-weight: 700;
+            @include adaptiv-value('font-size', 30, 20, 1);
+            @include adaptiv-value('margin-bottom', 30, 20, 1);
+        }
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:not(:last-child) {
+                margin-bottom: toRem(15);
+            }
+        }
+        &__btn {
+            background-color: $darkColor;
+            color: #fff;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+    }
+}
+

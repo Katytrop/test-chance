@@ -1,0 +1,15 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    min-height: 48px;
+}
+
+.title {
+    font-weight: 700;
+    @include adaptiv-value('margin-bottom', 30, 15, 1);
+    @include adaptiv-value('font-size', 42, 24, 1);
+}

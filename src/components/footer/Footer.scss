@@ -1,0 +1,26 @@
+.footer {
+    background-color: $darkColor;
+    color: #fff;
+    &__container {
+        min-height: toRem(80);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: toRem(15);
+		padding: 0 toRem(15);
+    }
+    &__left {
+        display: flex;
+        @include adaptiv-value('gap', 70, 30, 1);
+        
+    }
+    &__logo {
+        flex: 0 0 100px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+	}
+}
+
+

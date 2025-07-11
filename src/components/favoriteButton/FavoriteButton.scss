@@ -1,0 +1,20 @@
+.favorite-button {
+    position: absolute;
+    top: toRem(10);
+    right: toRem(10);
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    z-index: 10;
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $mainColorText;
+    }
+    &.favorite-active {
+        svg {
+            fill: red;
+        }
+        
+    }
+}

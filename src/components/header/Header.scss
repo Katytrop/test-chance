@@ -1,0 +1,71 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $darkColor;
+    color: #fff;
+    z-index: 200;
+    &__container {
+        min-height: toRem(80);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: toRem(15);
+		padding: 0 toRem(15);
+    }
+    &__left {
+        display: flex;
+        @include adaptiv-value('gap', 70, 30, 1);
+        
+    }
+    &__logo {
+        flex: 0 0 100px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+	}
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: toRem(30);
+        &__link {
+            color: inherit;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: toRem(20);
+        &__link {
+            position: relative;
+            flex: 0 0 35px;
+            height: 35px;
+        }
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+            fill: #fff;
+        }
+        &__badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 50%;
+        }
+    }
+}
+
