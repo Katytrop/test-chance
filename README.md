@@ -43,4 +43,4 @@
 - переходим на ветку dev
 - npm i 
 - npm run dev
-- запускаем сайт http://localhost:5173/test-chance/catalog
+- запускаем сайт http://localhost:5173/catalog
